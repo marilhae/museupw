@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #191919;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 34px;
+    color: #f5f5f5;
+}
+
+.logo span {
+    color: #A47823;
+}
+
+nav a {
+    color: #A47823;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ebe8e1;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Seção da imagem */
+.image-section {
+    flex: 2;
+    background-image: url('img/museu.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Seção do texto */
+.text-section {
+    flex: 1;
+    background-color: #BC8940;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.text-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.text-section p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.text-section a {
+    display: inline-block;
+    background-color: #8E6516;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-section a:hover {
+    background-color: #644c1e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        height: 50vh;
+    }
+
+    .text-section {
+        padding: 30px;
+    }
+
+    .text-section h1 {
+        font-size: 32px;
+    }
+}
+
+/* ---exposicoes-- */
+.exposicoes{
+         font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 80px;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+
+.exposicoes h1 {
+    font-size: 46px;
+    color: #a77b42;
+    margin-bottom: 50px;
+    padding: 80px;
+    text-align: center;
+}
+
+.exposicoes ul {
+    list-style-type: disc;
+    padding-left: 50px;
+    align-items: center;
+    text-align: justify;
+}
+
+ul li {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #000;
+}
+/* -------------fotos e videos --------*/
+
+.ftvideo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria {
+    background-color: #b57b3b;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.galeria h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.foto {
+    width: 52%;
+    height: 150px;
+    /* background-color: #999; */
+}
+.foto img{
+    height: 200px;
+}
+.video {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.video h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.video-frame  iframe {
+    width: 100%;
+    height: 300px;
+    background-color: #999;
+}
+
+/* parte final */
+
+.final {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+.mapa, .visita {
+    width: 48%;
+}
+
+.mapa h2, .visita h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.mapa-frame iframe {
+    width: 100%;
+    height: 200px;
+    background-color: #999;
+    margin-top: 10px;
+}
+
+.visita {
+    background-color: #b57b3b;
+    padding: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px 0;
+}
+
+input[type="date"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ccc;
+    width: 100%;
+}
+
+button {
+    background-color: #8d5c2c;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5c3e23;
+}
